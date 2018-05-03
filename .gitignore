@@ -2,3 +2,5 @@ venv/
 .idea/
 tictactoe/tictactoe/__pycache__/
 report.xml
+tictactoe/gameplay/__pycache__/
+tictactoe/gameplay/migrations/__pycache__/

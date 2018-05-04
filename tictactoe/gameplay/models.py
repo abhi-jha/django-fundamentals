@@ -12,7 +12,7 @@ GAME_STATUS_CHOICE =(
 
 
 class Game(models.Model):
-    first_payer = models.ForeignKey(User,on_delete=models.CASCADE, related_name="games_first_player")
+    first_player = models.ForeignKey(User,on_delete=models.CASCADE, related_name="games_first_player")
     second_player = models.ForeignKey(User, on_delete=models.CASCADE, related_name="games_second_player")
 
     start_time = models.DateTimeField(auto_now_add=True)
@@ -20,7 +20,7 @@ class Game(models.Model):
     status = models.CharField(max_length=1,default='F', choices=GAME_STATUS_CHOICE)
 
     def __str__(self):
-        return "{0} vs {1}".format(self.first_payer, self.second_player)
+        return "{0} vs {1}".format(self.first_player, self.second_player)
 
 
 class Move(models.Model):

@@ -4,3 +4,5 @@ tictactoe/tictactoe/__pycache__/
 report.xml
 tictactoe/gameplay/__pycache__/
 tictactoe/gameplay/migrations/__pycache__/
+tictactoe/player/migrations/__pycache__/
+tictactoe/player/__pycache__/
